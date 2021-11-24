@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "Bernardo A. Dal Corno",
-  "license": "ISC",
+  "license": "GNU AGPLv3",
   "homepage": "#readme",
   "devDependencies": {
     "@z3k/eslint-config-zk": "^1.0.3",
