@@ -1,9 +1,10 @@
 {
-  "name": "newproject",
+  "name": "allina.v",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --fix -f compact --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",
@@ -12,5 +13,9 @@
   "keywords": [],
   "author": "Bernardo A. Dal Corno",
   "license": "ISC",
-  "homepage": "#readme"
+  "homepage": "#readme",
+  "devDependencies": {
+    "@z3k/eslint-config-zk": "^1.0.3",
+    "eslint": "^7.32.0"
+  }
 }
