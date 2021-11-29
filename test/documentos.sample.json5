@@ -1,0 +1,20 @@
+{
+  cadastro: {
+    codCliente: '1',
+    nome: '2',
+    dataNascimento: '3',
+    email: '4',
+    telefone: '5',
+    endereço: '6',
+    CEP: '7',
+    cidade: '8',
+    estado: '9',
+    rendaFamiliar: 'a'
+  },
+  orçamento: {
+    codCliente: 'b',
+    nome: 'c',
+    produto: 'd',
+    valor: 'e'
+  }
+}

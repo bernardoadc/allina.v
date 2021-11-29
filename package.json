@@ -1,12 +1,12 @@
 {
   "name": "allina.v",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "",
-  "main": "app/index.js",
+  "main": "app/server.js",
   "scripts": {
     "lint": "eslint --fix -f compact --ignore-path .gitignore .",
-    "dev": "nodemon app/index.js",
-    "start": "node app/index.js"
+    "dev": "nodemon app/server.js",
+    "start": "node app/server.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "cqr-env": "^2.1.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "uid": "^2.0.0"
   }
 }
