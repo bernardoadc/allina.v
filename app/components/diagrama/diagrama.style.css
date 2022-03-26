@@ -1,0 +1,8 @@
+.node rect {
+  fill: #fff !important;
+  stroke: none !important;
+}
+
+.statediagram-state .divider {
+  stroke: none !important;
+}

@@ -1,75 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
-    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-    <style>
-      .node rect {
-        fill: #fff !important;
-        stroke: none !important;
-      }
-
-      .statediagram-state .divider {
-        stroke: none !important;
-      }
-
-      #actions {
-        display: flex;
-        justify-content: space-around;
-      }
-
-      select.listbox {
-        width: 200px;
-      }
-
-      .actionButtons {
-        display: flex;
-        justify-content: space-around;
-      }
-
-      .fluxo {
-        width: 400px;
-      }
-
-      select.new {
-        width: 200px;
-      }
-    </style>
+    <title>Protótipo Mapeamento de fluxo de dados</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div id="actions">
-      <div class="documentos">
-        <select class="listbox" id="documentos" size="10" onchange="showListFields() || showSelectDocumentos()">
-        </select>
-        <br>
-        <div class="actionButtons">
-          <button class="btnAdd" onclick="lists.documentos.add()">+</button>
-          <button class="btnEdit" onclick="lists.documentos.edit()">E</button>
-          <button class="btnRemove" onclick="lists.documentos.remove()">-</button>
-        </div>
-      </div>
-      <div class="campos">
-        <select class="listbox" id="campos" size="10">
-        </select>
-        <br>
-        <div class="actionButtons">
-          <button class="btnAdd" onclick="lists.campos.add()">+</button>
-          <button class="btnEdit" onclick="lists.campos.edit()">E</button>
-          <button class="btnRemove" onclick="lists.campos.remove()">-</button>
-        </div>
-      </div>
-      <div class="fluxos">
-        <div class="newFluxo">
-          <select class="new" id="fdocumentos" onchange="showSelectFields()"></select>
-          <select class="new" id="fcampos"></select>
-          <button class="btnAdd" onclick="fluxos.add()">+</button>
-        </div>
-      </div>
+      <component name="documentos" src="./components/documentos/documentos.component.html"></component>
+      <component name="campos" src="./components/campos/campos.component.html"></component>
+      <component name="fluxos" src="./components/fluxos/fluxos.component.html"></component>
     </div>
+    <component name="diagrama" src="./components/diagrama/diagrama.component.html"></component>
 
-    <div id="diagram"></div>
-
-    <script src="/uid/dist/index.min.js"></script>
-    <script src="index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

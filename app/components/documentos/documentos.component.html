@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="components/documentos/documentos.style.css" />
+<div class="documentos"">
+  <select class="listbox" id="documentos" size="10" onchange="" onclick="debugger; console.log(event, this.data.x)">
+  </select>
+  <br>
+  <div class="actionButtons">
+    <button class="btnAdd" onclick="this.data.listDocumentos.add()">+</button>
+    <button class="btnEdit" onclick="this.data.listDocumentos.edit()">E</button>
+    <button class="btnRemove" onclick="app.documentos.listDocumentos.remove()">-</button>
+  </div>
+</div>

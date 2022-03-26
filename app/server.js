@@ -7,6 +7,7 @@ const port = env(process.cwd() + '/env/port.env').port
 
 app.use(express.static('node_modules'))
 app.use(express.static('app'))
+app.use(express.static('test'))
 app.get('/', (req, res) => {
   res.sendFile(process.cwd() + '\\app\\index.html')
 })

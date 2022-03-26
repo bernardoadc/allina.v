@@ -1,0 +1,13 @@
+#actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+select.listbox {
+  width: 200px;
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: space-around;
+}
