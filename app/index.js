@@ -1,13 +1,15 @@
 import Components from './vanilla/components.vanilla.js'
+import Store from './vanilla/store.vanilla.js'
 
 import documentos from './components/documentos/documentos.controller.js'
 import campos from './components/campos/campos.controller.js'
 import fluxos from './components/fluxos/fluxos.controller.js'
 import diagrama from './components/diagrama/diagrama.controller.js'
 
-function setup () {
+const store = Store()
+
+async function setup () {
   // mermaid.initialize({startOnLoad: true})
-  setGlobalStore()
   Components.hydrate()
 }
 
