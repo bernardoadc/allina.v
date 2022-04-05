@@ -9,8 +9,7 @@ import diagrama from './components/diagrama/diagrama.controller.js'
 const store = Store()
 
 async function setup () {
-  // mermaid.initialize({startOnLoad: true})
-  Components.hydrate()
+  await Components.load({ app: true })
 }
 
 async function initialize () {
