@@ -1,5 +1,6 @@
 import Components from './vanilla/components.vanilla.js'
 import Store from './vanilla/store.vanilla.js'
+import If from './vanilla/if.vanilla.js'
 
 import documentos from './components/documentos/documentos.controller.js'
 import campos from './components/campos/campos.controller.js'
@@ -10,6 +11,7 @@ const store = Store()
 
 async function setup () {
   await Components.load({ app: true })
+  await If.evaluate()
 }
 
 async function initialize () {
